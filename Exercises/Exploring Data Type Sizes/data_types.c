@@ -30,6 +30,12 @@ int main() {
     printf("Size of fooString: %lu\n", sizeof(fooString));
     printf("\n");
     // Print out a table of values that matches the table
+    printf("%-13s%13.2f\n", "Bob", 10.00);
+    printf("%13s%-13.3f\n", "Adam", 100.000);
+    printf("%13s%13.4f\n", "Craig", 1000.0000);
+    printf("%-13s%-13.2f\n", "Sally", 10000.00);
+    printf("%-13s%13d\n", "Micha", 100000);
+    printf("\n");
     
     return 0;
 }
