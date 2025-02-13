@@ -12,9 +12,9 @@ int main() {
         if (userChoice == 1) {
             add();
         } else if (userChoice == 2) {
-            // encrypt();
+            encrypt();
         } else if (userChoice == 3) {
-            // primeChecker();
+            primeChecker();
         } else if (userChoice == 4) {
             printf("Bye for now!\n");
             return 0;

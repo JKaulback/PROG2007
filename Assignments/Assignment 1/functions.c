@@ -27,3 +27,32 @@ void add() {
     int result = num1 + num2;
     printf("The result of %d + %d is %d\n", num1, num2, result);
 }
+
+void encrypt() {
+    char password[100];
+    printf("Make sure your password has no spaces in it...\n");
+    printf("Enter the password to encrypt:");
+    scanf("%s", password);
+    while (getchar() != '\n');
+
+    for (int i = 0; i < sizeof(password) / sizeof(char); i++) {
+        // Break if last character
+        if (password[i] == '\0') {
+            break;
+        }
+        // High-tech encryption method
+        int temp = password[i] + 10 + -20 * (i % 2 == 0);
+        if (temp > '~') {
+            temp -= 93;
+        } else if (temp < 33) {
+            temp += 93;
+        }
+        password[i] = temp;
+    }
+
+    printf("Your encrypted password is: %s\n...This is completely secure\n\n", password);
+}
+
+void primeChecker() {
+    
+}
