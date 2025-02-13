@@ -9,7 +9,7 @@ void greetUser() {
 }
 
 void printMenu() {
-    printf("1 - Add two numbers\n");
+    printf("\n1 - Add two numbers\n");
     printf("2 - Encrypt a password\n");
     printf("3 - Check if prime number\n");
     printf("4 - Quit\n");
@@ -54,5 +54,15 @@ void encrypt() {
 }
 
 void primeChecker() {
-    
+    printf("Welcome to the prime checker.\n");
+    printf("Enter a number to check if it is a prime number: ");
+    int number;
+    scanf("%d", &number);
+    for (int i = 2; i < number; i++) {
+        if (number % i == 0) {
+            printf("%d is not a prime number!\n", number);
+            return;
+        }
+    }
+    printf("%d is a prime number!\n", number);
 }
