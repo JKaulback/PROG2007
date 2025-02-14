@@ -16,9 +16,7 @@ void printMenu() {
     printf("\nEnter a menu option: ");
 }
 
-void add() {
-    int num1 = 0, num2 = 0;
-    printf("Welcome to the number adder\n");
+void add(int num1, int num2) {
     printf("Enter the first number to get started: ");
     scanf("%d", &num1);
     printf("Now, enter a second number: ");
@@ -28,14 +26,8 @@ void add() {
     printf("The result of %d + %d is %d\n", num1, num2, result);
 }
 
-void encrypt() {
-    char password[100];
-    printf("Make sure your password has no spaces in it...\n");
-    printf("Enter the password to encrypt:");
-    scanf("%s", password);
-    while (getchar() != '\n');
-
-    for (int i = 0; i < sizeof(password) / sizeof(char); i++) {
+void encrypt(char password[100], int passwordLength) {
+    for (int i = 0; i < passwordLength; i++) {
         // Break if last character
         if (password[i] == '\0') {
             break;
@@ -53,11 +45,7 @@ void encrypt() {
     printf("Your encrypted password is: %s\n...This is completely secure\n\n", password);
 }
 
-void primeChecker() {
-    printf("Welcome to the prime checker.\n");
-    printf("Enter a number to check if it is a prime number: ");
-    int number;
-    scanf("%d", &number);
+void primeChecker(int number) {
     for (int i = 2; i < number; i++) {
         if (number % i == 0) {
             printf("%d is not a prime number!\n", number);

@@ -1,5 +1,5 @@
 void greetUser();
 void printMenu();
-void add();
-void encrypt();
-void primeChecker();
+void add(int, int);
+void encrypt(char*, int);
+void primeChecker(int);
