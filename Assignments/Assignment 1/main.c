@@ -9,9 +9,8 @@ int main() {
         scanf("%d", &userChoice);
         getchar();
         if (userChoice == 1) {
-            int num1 = 0, num2 = 0;
             printf("Welcome to the number adder\n");
-            add( num1, num2 );
+            add();
         } else if (userChoice == 2) {
             char password[100];
             printf("Make sure your password has no spaces in it...\n");

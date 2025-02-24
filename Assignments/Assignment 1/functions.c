@@ -16,7 +16,8 @@ void printMenu() {
     printf("\nEnter a menu option: ");
 }
 
-void add(int num1, int num2) {
+void add() {
+    int num1, num2;
     printf("Enter the first number to get started: ");
     scanf("%d", &num1);
     printf("Now, enter a second number: ");
@@ -41,7 +42,6 @@ void encrypt(char password[100], int passwordLength) {
         }
         password[i] = temp;
     }
-
     printf("Your encrypted password is: %s\n...This is completely secure\n\n", password);
 }
 
