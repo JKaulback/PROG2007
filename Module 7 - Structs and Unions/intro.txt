@@ -1,0 +1,30 @@
+public class Car {
+
+	// Member variables
+	public int age;
+	public String model;
+	public String make;
+	public int kms;
+	
+	// Constructor
+	public Car(int age, String model, String make, int kms) {
+		
+		this.age = age;		
+		this.model = model;
+		this.make = make;
+		this.kms = kms;
+	}
+	
+	// Member method
+	public void drive(int distTravelled) {
+		kms += distTravelled;
+	}
+}
+
+// Heart-breaking news to deliver to PROG2007 class
+
+// #1. There are no classes in C
+// #2. C is not an object oriented programming language
+// #3. There are no methods, only functions
+// #4. There are no member functions
+// #5. No abstract classes, no interfaces, no inheritance, no polymorphism
